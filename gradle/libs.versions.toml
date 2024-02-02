@@ -15,6 +15,8 @@ compose-plugin = "1.5.11"
 junit = "4.13.2"
 kotlin = "1.9.21"
 ktor = "2.3.7"
+coil-version = "3.0.0-alpha03"
+coil-client = "2.3.7"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -36,6 +38,11 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
 ktor-client-ios = { module = "io.ktor:ktor-client-ios", version.ref = "ktor" }
+
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil-version" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coil-version" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "coil-client" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "coil-client" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
